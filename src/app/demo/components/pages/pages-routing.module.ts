@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
         { path: 'crud', loadChildren: () => import('./crud/crud.module').then(m => m.CrudModule) },
         { path: 'empty', loadChildren: () => import('./empty/emptydemo.module').then(m => m.EmptyDemoModule) },
         { path: 'timeline', loadChildren: () => import('./timeline/timelinedemo.module').then(m => m.TimelineDemoModule) },
+        { path: 'client', loadChildren: () => import('./client/client.module').then(m =>m.ClientModule)},
         { path: '**', redirectTo: '/notfound' }
     ])],
     exports: [RouterModule]

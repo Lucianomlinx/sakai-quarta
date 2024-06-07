@@ -1,8 +1,7 @@
-
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase, AngularFireList } from '@angular/fire/compat/database';
 import { map, Observable } from 'rxjs';
-import { Product } from '../models/product.model';
+import { Product } from '../models/pet.model';
 
 export interface Item {
     key?: string;
